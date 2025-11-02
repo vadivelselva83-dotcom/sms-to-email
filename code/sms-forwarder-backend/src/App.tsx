@@ -35,7 +35,7 @@ export default function App() {
 
   async function saveBaseUrl() {
     try {
-      if (!baseUrl) return Alert.alert("Base URL is required", "Example: https://abc123.ngrok.io");
+      if (!baseUrl) return Alert.alert("Base URL is required", "Example: https://abc123.ngrok.io or smal.live");
       await setBaseUrl(baseUrl);
       Alert.alert("Saved", "Backend URL saved locally.");
     } catch (e: any) {
